@@ -87,6 +87,7 @@ export default function Home() {
               <div className="space-x-5">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://docs.google.com/document/d/1X9FD9BWGLYNG9hZSI5zOdHoux_NhMUWfCYyNxB1qhRw/edit?usp=sharing"
                 >
                   <button className="bg-sblue p-3 font-bold hover:shadow-xl text-swhite rounded shadow-lg">
@@ -106,6 +107,7 @@ export default function Home() {
                 </a>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/sebasmorant"
                 >
                   <button className="bg-sblue p-3 font-bold hover:shadow-xl text-swhite rounded-full shadow-lg">
@@ -120,7 +122,7 @@ export default function Home() {
                     </svg>
                   </button>
                 </a>
-                <a target="_blank" href="https://github.com/nzkdevsaider">
+                <a target="_blank" rel="noreferrer" href="https://github.com/nzkdevsaider">
                   <button className="bg-sblue p-3 font-bold hover:shadow-xl text-swhite rounded-full shadow-lg">
                     <svg
                       className="fill-swhite"
