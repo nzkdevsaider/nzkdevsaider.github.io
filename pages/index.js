@@ -91,9 +91,11 @@ export default function Home() {
               </h1>
               <div className="space-x-5">
                 <a
+                  alt="CV en PDF"
                   target="_blank"
-                  rel="noreferrer"
-                  href="https://docs.google.com/document/d/1X9FD9BWGLYNG9hZSI5zOdHoux_NhMUWfCYyNxB1qhRw/edit?usp=sharing"
+                  rel="noopener noreferrer"
+                  href="./pdf/CV_Sebastian Morales ENG.pdf"
+                  download
                 >
                   <button className="bg-sblue p-3 font-bold hover:shadow-xl text-swhite rounded shadow-lg">
                     <div className="justify-between flex items-center space-x-2">
