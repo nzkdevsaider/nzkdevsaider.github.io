@@ -15,7 +15,11 @@ module.exports = {
       swhite: "#ffffff",
       sblack: "#181818",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

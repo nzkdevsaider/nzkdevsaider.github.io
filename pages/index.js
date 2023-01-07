@@ -3,9 +3,6 @@ import SLogo from "./components/SLogo";
 import SLink from "./components/SLink";
 import SText from "./components/SText";
 import Link from "next/link";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -42,9 +39,7 @@ export default function Home() {
           content="https://nzkdevsaider.github.io/iconm.png"
         />
       </Head>
-      <header
-        className={`${inter.className} mx-5 mt-8 mb-20 md:my-20 md:mx-auto md:max-w-[900px] md:w-full`}
-      >
+      <header className="mx-5 mt-8 mb-20 md:my-20 md:mx-auto md:max-w-[900px] md:w-full">
         <div className="flex md:justify-between flex-wrap">
           <div className="flex text-center mb-7">
             <Link href="/">
@@ -66,7 +61,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className={`${inter.className}`}>
+      <main>
         <section className="mx-auto mb-40 md:max-w-[900px] md:w-full md:mb-72">
           <div className="md:grid flex flex-wrap flex-col-reverse md:grid-cols-section-me gap-1">
             <h1 className="font-bold text-6xl md:text-9xl text-center md:text-left">
@@ -167,7 +162,7 @@ export default function Home() {
           <div id="blog" className="mb-16">
             <SText>Blog</SText>
           </div>
-          <div class="flex flex-wrap md:flex-row gap-8 place-content-center mb-28">
+          <div className="flex flex-wrap md:flex-row gap-8 place-content-center mb-28">
             <div>
               <div className="bg-[#a3a2a2] rounded-lg p-8 w-[297px] h-[172px]">
                 <SLogo light />
@@ -186,7 +181,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className={`${inter.className} bg-sblack text-swhite p-4`}>
+      <footer className="bg-sblack text-swhite p-4">
         <div className="flex justify-between my-4 mx-5">
           <div>
             <SLogo light={true} />
@@ -195,7 +190,7 @@ export default function Home() {
             </button>
           </div>
           <div class="px-4 py-6 md:flex md:items-center md:justify-between">
-            <span class="text-sm sm:text-center">
+            <span className="text-sm sm:text-center">
               © {new Date().getFullYear()} sebasmorant.
             </span>
           </div>
