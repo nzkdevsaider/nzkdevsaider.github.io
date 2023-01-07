@@ -3,6 +3,9 @@ import SLogo from "./components/SLogo";
 import SLink from "./components/SLink";
 import SText from "./components/SText";
 import Link from "next/link";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -39,7 +42,9 @@ export default function Home() {
           content="https://nzkdevsaider.github.io/iconm.png"
         />
       </Head>
-      <header className="mx-5 mt-8 mb-20 md:my-20 md:mx-auto md:max-w-[900px] md:w-full">
+      <header
+        className={`${inter.className} mx-5 mt-8 mb-20 md:my-20 md:mx-auto md:max-w-[900px] md:w-full`}
+      >
         <div className="flex md:justify-between flex-wrap">
           <div className="flex text-center mb-7">
             <Link href="/">
@@ -61,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main>
+      <main className={`${inter.className}`}>
         <section className="mx-auto mb-40 md:max-w-[900px] md:w-full md:mb-72">
           <div className="md:grid flex flex-wrap flex-col-reverse md:grid-cols-section-me gap-1">
             <h1 className="font-bold text-6xl md:text-9xl text-center md:text-left">
@@ -122,7 +127,11 @@ export default function Home() {
                     </svg>
                   </button>
                 </a>
-                <a target="_blank" rel="noreferrer" href="https://github.com/nzkdevsaider">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/nzkdevsaider"
+                >
                   <button className="bg-sblue p-3 font-bold hover:shadow-xl text-swhite rounded-full shadow-lg">
                     <svg
                       className="fill-swhite"
@@ -175,7 +184,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="bg-sblack text-swhite p-4">
+      <footer className={`${inter.className} bg-sblack text-swhite p-4`}>
         <div className="flex justify-between my-4 mx-5">
           <div>
             <SLogo light={true} />
