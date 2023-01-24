@@ -1,4 +1,4 @@
-<p align="center"><img alt="logo" src="public/logo-white.png"><br><a href="https://nzkdevsaider.github.io">Visitar página web</a></p>
+<p align="center"><img alt="logo" src="public/iconm.png"><br><a href="https://nzkdevsaider.github.io">Visitar página web</a></p>
 
 Visita mi página web y portafolio para conocer más sobre mi trabajo y mis proyectos. En este repositorio encontrarás el código fuente de mi página web y recursos que utilizo para mi marca personal.
 
