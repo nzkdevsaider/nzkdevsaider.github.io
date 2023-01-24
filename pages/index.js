@@ -1,52 +1,74 @@
 import Head from "next/head";
-import SLogo from "./components/SLogo";
-import SLink from "./components/SLink";
-import SText from "./components/SText";
+import SLogo from "@components/SLogo";
+import SLink from "@components/SLink";
+import SText from "@components/SText";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+function useLocalStorage(key, initialValue) {
+  const [storedValue, setStoredValue] = useState(() => {
+    if (typeof window === "undefined") {
+      return initialValue;
+    }
+    try {
+      const item = window.localStorage.getItem(key);
+
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      console.log(error);
+      return initialValue;
+    }
+  });
+
+  const setValue = (value) => {
+    try {
+      const valueToStore =
+        value instanceof Function ? value(storedValue) : value;
+
+      setStoredValue(valueToStore);
+
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  return [storedValue, setValue];
+}
 
 export default function Home() {
+  const [theme, setTheme] = useLocalStorage("theme", "light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
+
   return (
     <>
       <Head>
         <title>sebasmorant.</title>
-        <meta charset="utf-8" />
-        <meta name="theme-color" content="#4D76FF" />
-        <meta
-          name="description"
-          content="Desarrollador web, MERN stack y backend."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://nzkdevsaider.github.io" />
-        <meta property="og:title" content="sebasmorant." />
-        <meta
-          property="og:description"
-          content="Desarrollador web, MERN stack y backend."
-        />
-        <meta
-          property="og:image"
-          content="https://nzkdevsaider.github.io/iconm.png"
-        />
-
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://nzkdevsaider.github.io" />
-        <meta property="twitter:title" content="sebasmorant." />
-        <meta
-          property="twitter:description"
-          content="Desarrollador web, MERN stack y backend."
-        />
-        <meta
-          property="twitter:image"
-          content="https://nzkdevsaider.github.io/iconm.png"
-        />
       </Head>
       <header className="mx-5 mt-8 mb-20 md:my-20 md:mx-auto md:max-w-[900px] md:w-full">
-        <div className="flex md:justify-between flex-wrap">
+        <div className="flex md:justify-between justify-center flex-wrap">
           <div className="flex text-center mb-7">
             <Link href="/">
               <SLogo />
             </Link>
           </div>
-          <div className="flex text-center">
+          <div className="flex text-center justify-center">
             <ul className="flex text-3xl font-bold gap-x-[1.5rem]">
               <li>
                 <SLink href="#perfil">perfil</SLink>
@@ -58,13 +80,51 @@ export default function Home() {
                 <SLink href="mailto:sebasmoraresu@gmail.com">contacto</SLink>
               </li>
             </ul>
+            <button
+              onClick={toggleTheme}
+              className="fixed z-90 bottom-10 right-8 bg-sblue w-16 h-16 rounded-full drop-shadow-lg flex justify-center items-center transition-colors dark:bg-swhite"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="dark:hidden"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#ffffff"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+                <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+                <path d="M19 11h2m-1 -1v2" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="hidden dark:block"
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="#000000"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+              </svg>
+            </button>
           </div>
         </div>
       </header>
       <main>
         <section className="mx-auto mb-40 md:max-w-[900px] md:w-full md:mb-72">
           <div className="md:grid flex flex-wrap flex-col-reverse md:grid-cols-section-me gap-1">
-            <h1 className="font-bold text-6xl md:text-9xl text-center md:text-left">
+            <h1 className="font-bold text-6xl md:text-9xl text-center md:text-left dark:text-swhite">
               Sebastián Morales
             </h1>
 
@@ -78,7 +138,7 @@ export default function Home() {
           <div id="perfil" className="mb-24">
             <SText>Perfil</SText>
           </div>
-          <div className="md:grid md:grid-cols-section-me flex flex-wrap gap-1 mb-24">
+          <div className="md:grid md:grid-cols-section-me flex flex-wrap gap-1 mb-24 dark:text-swhite">
             <div>
               <p className="text-lg font-black">SOBRE MÍ</p>
               <h1 className="my-8 font-black text-3xl">
@@ -182,14 +242,14 @@ export default function Home() {
         </section>
       </main>
       <footer className="bg-sblack text-swhite p-4">
-        <div className="flex justify-between my-4 mx-5">
+        <div className="flex justify-between my-4 mx-24">
           <div>
             <SLogo light={true} />
             <button className="bg-sblue p-3 font-bold hover:shadow-xl rounded shadow-lg my-5">
               <Link href="mailto:sebasmoraresu@gmail.com">Contacto</Link>
             </button>
           </div>
-          <div class="px-4 py-6 md:flex md:items-center md:justify-between">
+          <div className="px-4 py-6 md:flex md:items-center md:justify-between">
             <span className="text-sm sm:text-center">
               © {new Date().getFullYear()} sebasmorant.
             </span>
