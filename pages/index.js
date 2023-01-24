@@ -242,7 +242,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="bg-sblack text-swhite p-4">
-        <div className="flex justify-between my-4 mx-24">
+        <div className="flex flex-wrap justify-center md:justify-between md:my-4 md:mx-24">
           <div>
             <SLogo light={true} />
             <button className="bg-sblue p-3 font-bold hover:shadow-xl rounded shadow-lg my-5">
