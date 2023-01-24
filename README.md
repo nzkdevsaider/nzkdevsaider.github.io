@@ -4,7 +4,7 @@ Visita mi página web y portafolio para conocer más sobre mi trabajo y mis proy
 
 ## Información técnica de la página web
 
-La página web está desarrollada con [Next.js](https://nextjs.org/) y [Tailwind CSS](https://tailwindcss.com/). Para el despliegue de la página web se utiliza [Github Pages](https://pages.github.com/) y Github Actios para la integración continua.
+La página web está desarrollada con [Next.js](https://nextjs.org/) y estilizada con [Tailwind CSS](https://tailwindcss.com/). Para el despliegue de la página web se utiliza [Github Pages](https://pages.github.com/) y Github Actions para la integración continua.
 
 ## ¿Qué encontrarás aquí?
 
