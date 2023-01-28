@@ -222,7 +222,7 @@ export default function Home() {
           <div id="blog" className="mb-16">
             <SText>Blog</SText>
           </div>
-          <div className="flex flex-wrap md:flex-row gap-8 place-content-center mb-28">
+          <div className="flex flex-col items-center md:flex-row gap-8 place-content-center mb-28">
             <div>
               <div className="bg-[#a3a2a2] rounded-lg p-8 w-[297px] h-[172px]">
                 <SLogo light />
