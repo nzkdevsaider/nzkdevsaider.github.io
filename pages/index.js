@@ -205,8 +205,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-1xl my-5 text-justify">
-               Soy un desarrollador web con experiencia en aplicaciones web, frontend y backend, gestión de ERP y desarrollo de apps móviles. Experto en metodologías ágiles. Entusiasta de tecnología moderna, ciencia de datos, ciberseguridad e IA. Asertivo, apasionado, analítico y crítico. Dedicado a lograr objetivos medibles y satisfactorios. 
-              </p>
+                 Soy un desarrollador web con experiencia en aplicaciones web, frontend y backend, gestión de ERP y desarrollo de apps móviles. Experto en metodologías ágiles. Entusiasta de tecnología moderna, ciencia de datos, ciberseguridad e IA. Asertivo, apasionado, analítico y crítico. Dedicado a lograr objetivos medibles y satisfactorios. </p>
             </div>
           </div>
         </section>
