@@ -205,15 +205,7 @@ export default function Home() {
             </div>
             <div>
               <p className="text-1xl my-5 text-justify">
-                Soy un desarrollador web altamente capacitado en metodologías
-                ágiles, con experiencia en el desarrollo de aplicaciones web,
-                frontend y backend, la gestión de sistemas ERP y el desarrollo
-                de aplicaciones móviles. Soy entusiasta de la tecnología
-                moderna, la ciencia de datos, la ciberseguridad y la
-                inteligencia artificial. Además, soy un profesional asertivo,
-                apasionado, analítico y de pensamiento crítico, dispuesto a dar
-                mi mejor esfuerzo para alcanzar objetivos medibles y
-                satisfactorios.
+               Soy un desarrollador web con experiencia en aplicaciones web, frontend y backend, gestión de ERP y desarrollo de apps móviles. Experto en metodologías ágiles. Entusiasta de tecnología moderna, ciencia de datos, ciberseguridad e IA. Asertivo, apasionado, analítico y crítico. Dedicado a lograr objetivos medibles y satisfactorios. 
               </p>
             </div>
           </div>
