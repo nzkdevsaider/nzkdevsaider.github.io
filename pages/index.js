@@ -3,39 +3,8 @@ import SLogo from "@components/SLogo";
 import SLink from "@components/SLink";
 import SText from "@components/SText";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-
-function useLocalStorage(key, initialValue) {
-  const [storedValue, setStoredValue] = useState(() => {
-    if (typeof window === "undefined") {
-      return initialValue;
-    }
-    try {
-      const item = window.localStorage.getItem(key);
-
-      return item ? JSON.parse(item) : initialValue;
-    } catch (error) {
-      console.log(error);
-      return initialValue;
-    }
-  });
-
-  const setValue = (value) => {
-    try {
-      const valueToStore =
-        value instanceof Function ? value(storedValue) : value;
-
-      setStoredValue(valueToStore);
-
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem(key, JSON.stringify(valueToStore));
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  return [storedValue, setValue];
-}
+import { useEffect } from "react";
+import useLocalStorage from "lib/useLocalStorage";
 
 export default function Home() {
   const [theme, setTheme] = useLocalStorage("theme", "light");
@@ -205,8 +174,13 @@ export default function Home() {
             </div>
             <div>
               <p className="text-1xl my-5 text-justify">
-              Desarrollador web con experiencia en aplicaciones web, frontend y backend, gestión de ERP y desarrollo de apps móviles. Experto en metodologías ágiles. Entusiasta de tecnología moderna, ciencia de datos, ciberseguridad e IA. Asertivo, apasionado, analítico y crítico. Dedicado a lograr objetivos medibles y satisfactorios.
- </p> </div>
+                Desarrollador web con experiencia en aplicaciones web, frontend
+                y backend, gestión de ERP, metodologías agiles y desarrollo de
+                apps móviles. Entusiasta de tecnología moderna, ciencia de
+                datos, ciberseguridad e IA. Asertivo, apasionado, analítico y
+                crítico. Dedicado a lograr objetivos medibles y satisfactorios.
+              </p>{" "}
+            </div>
           </div>
         </section>
         <section className="mx-5 md:mx-auto md:max-w-[900px] md:w-full">
