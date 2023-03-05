@@ -5,6 +5,7 @@ import SText from "@components/SText";
 import Link from "next/link";
 import { useEffect } from "react";
 import useLocalStorage from "lib/useLocalStorage";
+import SebastianMorales from "@components/SebastianMorales";
 
 export default function Home() {
   const [theme, setTheme] = useLocalStorage("theme", "light");
@@ -91,16 +92,9 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <section className="mx-auto mb-40 md:max-w-[900px] md:w-full md:mb-72">
-          <div className="md:grid flex flex-wrap flex-col-reverse md:grid-cols-section-me gap-1">
-            <h1 className="font-bold text-6xl md:text-9xl text-center md:text-left dark:text-swhite">
-              Sebastián Morales
-            </h1>
-
-            <img
-              className="m-auto w-300 h-300 rounded-full"
-              src="/avatar/me.png"
-            />
+        <section className="mx-auto my-40 md:max-w-[900px] md:w-full md:mb-72">
+          <div className="md:grid flex flex-wrap flex-col-reverse gap-1">
+            <SebastianMorales />
           </div>
         </section>
         <section className="mx-5 md:mx-auto md:max-w-[900px] md:w-full">
