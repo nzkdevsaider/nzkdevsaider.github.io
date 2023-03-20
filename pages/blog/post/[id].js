@@ -1,15 +1,36 @@
 import { getAllPostIds, getPostContent } from "lib/posts";
+import useLocalStorage from "lib/useLocalStorage";
+import { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeToggle from "@components/Buttons/themetoggle";
 
 const BlogPost = ({ postData }) => {
+  const [theme, setTheme] = useLocalStorage("theme", "light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
   return (
     <>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className="container mx-auto my-10 md:px-36 p-3">
+      <ThemeToggle toggleTheme={toggleTheme} />
+      <article className="container dark:text-swhite mx-auto my-10 md:px-36 p-3">
         <div className="flex flex-col items-center justify-center gap-10">
           <div className="w-full h-[200px]">
             <Image
@@ -24,6 +45,7 @@ const BlogPost = ({ postData }) => {
           <div className="flex flex-row gap-5 items-center">
             <div className="flex flex-row items-center gap-2">
               <svg
+                className="dark:stroke-swhite"
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
@@ -45,6 +67,7 @@ const BlogPost = ({ postData }) => {
             </div>
             <div className="flex flex-row items-center gap-2">
               <svg
+                className="dark:stroke-swhite"
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
@@ -68,7 +91,7 @@ const BlogPost = ({ postData }) => {
           />
         </div>
       </article>
-      <footer className="flex flex-col justify-center items-center m-10">
+      <footer className="flex flex-col justify-center items-center m-10 dark:text-swhite">
         <p className="text-sm">© {new Date().getFullYear()} sebasmorant.</p>
         <p className="text-sm">
           <Link href="/blog">
