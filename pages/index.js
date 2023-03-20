@@ -6,8 +6,10 @@ import Link from "next/link";
 import { useEffect } from "react";
 import useLocalStorage from "lib/useLocalStorage";
 import SebastianMorales from "@components/SebastianMorales";
+import { getSortedPostsData, getPostsCount } from "lib/posts";
+import BlogSection from "@components/Sections/BlogSection";
 
-export default function Home() {
+export default function Home({ allPostsData, postsCount }) {
   const [theme, setTheme] = useLocalStorage("theme", "light");
 
   useEffect(() => {
@@ -95,6 +97,9 @@ export default function Home() {
         <section className="mx-auto my-40 md:max-w-[900px] md:w-full md:mb-72">
           <div className="md:grid flex flex-wrap flex-col-reverse gap-1">
             <SebastianMorales />
+            <span className="text-center text-3xl font-extralight dark:text-swhite">
+              Full-stack developer
+            </span>
           </div>
         </section>
         <section className="mx-5 md:mx-auto md:max-w-[900px] md:w-full">
@@ -177,28 +182,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mx-5 md:mx-auto md:max-w-[900px] md:w-full">
-          <div id="blog" className="mb-16">
-            <SText>Blog</SText>
-          </div>
-          <div className="flex flex-col items-center md:flex-row gap-8 place-content-center mb-28">
-            <div>
-              <div className="bg-[#a3a2a2] rounded-lg p-8 w-[297px] h-[172px]">
-                <SLogo light />
-              </div>
-            </div>
-            <div>
-              <div className="bg-[#b6b5b5] rounded-lg p-8 w-[297px] h-[172px]">
-                <SLogo light />
-              </div>
-            </div>
-            <div>
-              <div className="bg-[#c5c4c4] rounded-lg p-8 w-[297px] h-[172px]">
-                <SLogo light />
-              </div>
-            </div>
-          </div>
-        </section>
+        <BlogSection postsData={{ posts: allPostsData, count: postsCount }} />
       </main>
       <footer className="bg-sblack text-swhite p-4">
         <div className="flex flex-wrap justify-center md:justify-between md:my-4 md:mx-24">
@@ -217,4 +201,16 @@ export default function Home() {
       </footer>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  const postsCount = getPostsCount();
+
+  return {
+    props: {
+      allPostsData,
+      postsCount,
+    },
+  };
 }
