@@ -8,7 +8,13 @@ const BlogSection = ({ page, postsData }) => {
       <section className="container m-auto my-10">
         <div className="grid md:grid-rows-2 md:grid-flow-col grid-cols-2 gap-2">
           {postsData.posts.map(({ id, date, title, image }) => (
-            <BlogCard id={id} date={date} title={title} image={image} />
+            <BlogCard
+              key={id}
+              id={id}
+              date={date}
+              title={title}
+              image={image}
+            />
           ))}
         </div>
       </section>
@@ -22,7 +28,7 @@ const BlogSection = ({ page, postsData }) => {
       </div>
       <div className="flex flex-col md:flex-row gap-8 place-content-center mb-5">
         {postsData.posts.map(({ id, date, title, image }) => (
-          <BlogCard id={id} date={date} title={title} image={image} />
+          <BlogCard key={id} id={id} date={date} title={title} image={image} />
         ))}
       </div>
       <div className="flex flex-col justify-center">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BlogCard = ({ id, image, title, date }) => {
   return (
-    <div key={id} className="w-[300px] h-[300px] m-auto">
+    <div className="w-[300px] h-[300px] m-auto">
       <Link href={`/blog/post/${id}`}>
         <div className="w-[297px] h-[172px]">
           <Image
