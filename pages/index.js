@@ -81,8 +81,7 @@ export default function Home({ allPostsData, postsCount }) {
                   alt="CV en PDF"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="./pdf/CV_Sebastian Morales ENG.pdf"
-                  download
+                  href="https://docs.google.com/document/d/1X9FD9BWGLYNG9hZSI5zOdHoux_NhMUWfCYyNxB1qhRw/edit?usp=sharing"
                 >
                   <button className="bg-sblue p-3 font-bold hover:shadow-xl text-swhite rounded shadow-lg">
                     <div className="justify-between flex items-center space-x-2">
