@@ -209,12 +209,7 @@
 			"startDate": "2023",
 			"endDate": "Actualmente",
 			"description": "He realizado valiosas contribuciones al sistema de diseño para una plataforma de educación en línea.",
-			"highlights": [
-				"Storybook",
-				"React",
-				"LMS",
-				"Sass"
-			],
+			"highlights": ["Storybook", "React", "LMS", "Sass"],
 			"url": "https://ayudinga.org/"
 		},
 		{
@@ -222,12 +217,7 @@
 			"startDate": "2024",
 			"endDate": "Actualmente",
 			"description": "Aprovechado la tecnología de reconocimiento de voz más avanzada para transcribir audio de manera rápida y eficiente.",
-			"highlights": [
-				"IA",
-				"Reconocimiento de voz",
-				"Subtítulos SRT",
-				"Python"
-			],
+			"highlights": ["IA", "Reconocimiento de voz", "Subtítulos SRT", "Python"],
 			"url": "https://github.com/nzkdevsaider/whispersrt"
 		},
 		{
@@ -248,13 +238,14 @@
 			"name": "sebasmorant",
 			"startDate": "2023",
 			"endDate": "Actualmente",
-			"description": "Mi portafolio personal, donde muestro mis proyectos, habilidades y experiencias.",
+			"description": "Portafolio personal personalizable y adaptable, utilizando JSONResume como estándar para exportar CV y hecho en NextJS.",
 			"highlights": [
 				"Portafolio",
 				"React",
 				"Next.js",
 				"Tailwind CSS",
-				"CV"
+				"CV",
+				"JSONResume"
 			],
 			"url": "https://sebasmorant.saider.dev"
 		},
@@ -300,7 +291,13 @@
 			"startDate": "2023",
 			"endDate": "2023",
 			"description": "SosteniPro es un prototipo de CRM que permite gestionar las prácticas sostenibles de una empresa y su emisión de huella de carbono.",
-			"highlights": ["Huella de Carbono", "CRM", "React", "Next.js", "Serverless"],
+			"highlights": [
+				"Huella de Carbono",
+				"CRM",
+				"React",
+				"Next.js",
+				"Serverless"
+			],
 			"url": "https://github.com/nzkdevsaider/sostenipro"
 		}
 	]
