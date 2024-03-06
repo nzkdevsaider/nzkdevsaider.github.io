@@ -1,36 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center"><img alt="logo" src="assets/iconm.png"><br><a href="https://nzkdevsaider.github.io">Visitar página web</a></p>
 
-## Getting Started
+Visita mi página web y portafolio para conocer más sobre mi trabajo y mis proyectos. En este repositorio encontrarás el código fuente de mi página web y recursos que utilizo para mi marca personal.
 
-First, run the development server:
+## Información técnica de la página web
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+La página web está desarrollada con [Next.js](https://nextjs.org/) y estilizada con [Tailwind CSS](https://tailwindcss.com/). Para el despliegue de la página web se utiliza [Github Pages](https://pages.github.com/) y Github Actions para la integración continua.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ¿Qué encontrarás aquí?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+La información tangible que se guarda aquí es la siguiente:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Código fuente de la página web.
+- Recursos de la marca personal.
+- Archivos PDF de mi CV.
+- Archivos PSD de mi logo.
