@@ -39,9 +39,11 @@ const Button = ({ network, url }: ButtonProps) => {
     }
   };
   return (
-    <Link target="_blank" href={url} className="btn btn-sm btn-circle">
-      {getBrand(network).icon}
-    </Link>
+    <div className="tooltip" data-tip={network}>
+      <Link target="_blank" href={url} className="btn btn-sm btn-circle">
+        {getBrand(network).icon}
+      </Link>
+    </div>
   );
 };
 
