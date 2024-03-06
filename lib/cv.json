@@ -1,0 +1,307 @@
+{
+	"basics": {
+		"name": "Sebastián Morales",
+		"label": "Desarrollador full-stack",
+		"image": "",
+		"email": "sebasmoraresu@gmail.com",
+		"phone": "(507) 62414201",
+		"url": "https://sebasmorant.saider.dev",
+		"summary": "Desarrollador full-stack con sólidos conocimientos en tecnologías web de vanguardia. Especializado en el desarrollo de aplicaciones serverless y una coombinación de habilidades técnicas excepcionales con una pasión por resolver desafíos.",
+		"location": {
+			"address": "Ciudad de Panamá",
+			"postalCode": "07101",
+			"city": "Ciudad de Panamá",
+			"countryCode": "PA",
+			"region": "Panamá"
+		},
+		"profiles": [
+			{
+				"network": "LinkedIn",
+				"username": "sebasmorant",
+				"url": "https://linkedin.com/in/sebasmorant"
+			},
+			{
+				"network": "GitHub",
+				"username": "nzkdevsaider",
+				"url": "https://github.com/nzkdevsaider"
+			},
+			{
+				"network": "Instagram",
+				"username": "sebasmorant",
+				"url": "https://instagram.com/sebasmorant"
+			}
+		]
+	},
+	"work": [
+		{
+			"name": "Fundación Ayudinga",
+			"position": "Desarrollador Frontend",
+			"url": "https://ayudinga.org",
+			"startDate": "2023",
+			"endDate": "Actualmente",
+			"summary": "He contribuido al desarrollo de soluciones web enfocadas en el impacto social trabajando en el sistema de diseño y en el sitio web de una plataforma de educación en línea para estudiantes.",
+			"highlights": [
+				"Desarrollo de la plataforma de educación en línea",
+				"Desarrollo del sistema de diseño"
+			]
+		}
+	],
+	"volunteer": [
+		{
+			"organization": "Fundación Ayudinga",
+			"position": "Voluntario de Desarrollo Frontend",
+			"url": "https://ayudinga.org/",
+			"startDate": "2023",
+			"endDate": "Actualmente",
+			"summary": "Voluntariado donde he podido desarrollar mis habilidades en React, Next.js, HTML5, CSS3 y JavaScript, he formado parte del equipo responsable de construir interfaces de usuario modernas y accesibles para proyectos alineados con las causas que promueve la fundación.",
+			"highlights": [
+				"Desarrollo de la plataforma de educación en línea",
+				"Desarrollo del sistema de diseño"
+			]
+		}
+	],
+	"education": [
+		{
+			"institution": "Universidad Tecnológica de Panamá",
+			"url": "https://utp.ac.pa/",
+			"area": "Ingeniero en Sistemas de Información",
+			"studyType": "Licenciatura",
+			"startDate": "2021",
+			"endDate": "Actualmente",
+			"score": "1.99",
+			"courses": [
+				"Desarrollo Lógico de Algoritmos",
+				"Desarrollo web",
+				"Estructura de Datos",
+				"Cálculo",
+				"Base de Datos",
+				"Ingeniería de Software"
+			]
+		}
+	],
+	"awards": [
+		{
+			"title": "Award",
+			"date": "2014-11-01",
+			"awarder": "Company",
+			"summary": "There is no spoon."
+		}
+	],
+	"certificates": [
+		{
+			"name": "Certificate",
+			"date": "2021-11-07",
+			"issuer": "Company",
+			"url": "https://certificate.com"
+		}
+	],
+	"publications": [
+		{
+			"name": "Publication",
+			"publisher": "Company",
+			"releaseDate": "2014-10-01",
+			"url": "https://publication.com",
+			"summary": "Description…"
+		}
+	],
+	"skills": [
+		{
+			"name": "JavaScript",
+			"level": "Master",
+			"keywords": ["JavaScript"]
+		},
+		{
+			"name": "TypeScript",
+			"level": "Intermediate",
+			"keywords": ["TypeScript"]
+		},
+		{
+			"name": "React",
+			"level": "Advanced",
+			"keywords": ["React"]
+		},
+		{
+			"name": "NextJS",
+			"level": "Advanced",
+			"keywords": ["Next.js"]
+		},
+		{
+			"name": "TailwindCSS",
+			"level": "Intermediate",
+			"keywords": ["Tailwind CSS"]
+		},
+		{
+			"name": "HTML",
+			"level": "Master",
+			"keywords": ["HTML"]
+		},
+		{
+			"name": "CSS",
+			"level": "Master",
+			"keywords": ["CSS"]
+		},
+		{
+			"name": "MongoDB",
+			"level": "Intermediate",
+			"keywords": ["MongoDB"]
+		},
+		{
+			"name": "MySQL",
+			"level": "Intermediate",
+			"keywords": ["MySQL"]
+		},
+		{
+			"name": "Python",
+			"level": "Intermediate",
+			"keywords": ["Python"]
+		},
+		{
+			"name": "Docker",
+			"level": "Intermediate",
+			"keywords": ["Docker"]
+		},
+		{
+			"name": "Git",
+			"level": "Advanced",
+			"keywords": ["Git"]
+		},
+		{
+			"name": "GitHub",
+			"level": "Advanced",
+			"keywords": ["GitHub"]
+		},
+		{
+			"name": "NodeJS",
+			"level": "Advanced",
+			"keywords": ["Node.js"]
+		},
+		{
+			"name": "Deno",
+			"level": "Intermediate",
+			"keywords": ["Deno"]
+		}
+	],
+	"languages": [
+		{
+			"language": "Español",
+			"fluency": "Hablante nativo"
+		},
+		{
+			"language": "Inglés",
+			"fluency": "Intermedio de negocios"
+		}
+	],
+	"interests": [
+		{
+			"name": "Wildlife",
+			"keywords": ["Ferrets", "Unicorns"]
+		}
+	],
+	"references": [
+		{
+			"name": "Jane Doe",
+			"reference": "Reference…"
+		}
+	],
+	"projects": [
+		{
+			"name": "Ayudinga Design System",
+			"startDate": "2023",
+			"endDate": "Actualmente",
+			"description": "He realizado valiosas contribuciones al sistema de diseño para una plataforma de educación en línea.",
+			"highlights": [
+				"Storybook",
+				"React",
+				"LMS",
+				"Sass"
+			],
+			"url": "https://ayudinga.org/"
+		},
+		{
+			"name": "whispersrt",
+			"startDate": "2024",
+			"endDate": "Actualmente",
+			"description": "Aprovechado la tecnología de reconocimiento de voz más avanzada para transcribir audio de manera rápida y eficiente.",
+			"highlights": [
+				"IA",
+				"Reconocimiento de voz",
+				"Subtítulos SRT",
+				"Python"
+			],
+			"url": "https://github.com/nzkdevsaider/whispersrt"
+		},
+		{
+			"name": "minota",
+			"startDate": "2023",
+			"endDate": "2024",
+			"description": "Minota es mi primer PWA donde los estudiantes pueden dar seguimiento a sus calificaciones acádemicas, funciona totalmente de manera local.",
+			"highlights": [
+				"PWA",
+				"React",
+				"IndexedDB",
+				"Offline First",
+				"Estudiantes"
+			],
+			"url": "https://github.com/nzkdevsaider/minota"
+		},
+		{
+			"name": "sebasmorant",
+			"startDate": "2023",
+			"endDate": "Actualmente",
+			"description": "Mi portafolio personal, donde muestro mis proyectos, habilidades y experiencias.",
+			"highlights": [
+				"Portafolio",
+				"React",
+				"Next.js",
+				"Tailwind CSS",
+				"CV"
+			],
+			"url": "https://sebasmorant.saider.dev"
+		},
+		{
+			"name": "listeningnow",
+			"startDate": "2023",
+			"endDate": "2023",
+			"description": "ListeningNow es una aplicación web que te permite mostrarle al mundo lo que estás escuchando desde un cuadro embebido.",
+			"highlights": ["Música", "Spotify", "React", "Next.js", "Serverless"],
+			"url": "https://listeningnow.vercel.app/"
+		},
+		{
+			"name": "arboleda",
+			"startDate": "2022",
+			"endDate": "2023",
+			"description": "arboleda es un prototipo de aplicación movil de mensajería instantánea, donde puedes enviar mensajes de manera segura y privada.",
+			"highlights": ["Mensajería", "Flutter", "Dart", "Seguridad"],
+			"url": "https://github.com/nzkdevsaider/arboleda-client"
+		},
+		{
+			"name": "Tareinga",
+			"startDate": "2023",
+			"endDate": "2023",
+			"description": "Tareinga es una aplicación web inspirada en Ayudinga que te permite crear y gestionar tareas de manera sencilla.",
+			"highlights": ["Tareas", "React", "Next.js", "Serverless"],
+			"url": "https://github.com/nzkdevsaider/tareinga"
+		},
+		{
+			"name": "cerezavision",
+			"startDate": "2023",
+			"endDate": "2023",
+			"description": "CerezaVision es un prototipo de visión artificial que permite detectar rostros, reconocerlos y gestionarlos en una base de datos.",
+			"highlights": [
+				"Visión Artificial",
+				"Python",
+				"OpenCV",
+				"Reconocimiento Facial"
+			],
+			"url": "https://github.com/nzkdevsaider/cerezavision"
+		},
+		{
+			"name": "SosteniPro",
+			"startDate": "2023",
+			"endDate": "2023",
+			"description": "SosteniPro es un prototipo de CRM que permite gestionar las prácticas sostenibles de una empresa y su emisión de huella de carbono.",
+			"highlights": ["Huella de Carbono", "CRM", "React", "Next.js", "Serverless"],
+			"url": "https://github.com/nzkdevsaider/sostenipro"
+		}
+	]
+}
