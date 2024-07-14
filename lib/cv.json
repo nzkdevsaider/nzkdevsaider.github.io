@@ -39,6 +39,18 @@
 	},
 	"work": [
 		{
+			"name": "Factú",
+			"position": "Desarrollador Frontend",
+			"url": "https://factutech.com",
+			"startDate": "2024",
+			"endDate": "Actualmente",
+			"summary": "Implemento nuevas funcionalidades para facilitar la gestión financiera a personas, diseño interfaces con prácticas enfocadas en presentar un UI/UX amigable y contribuyo al desarollo de la aplicación móvil en React Native.",
+			"highlights": [
+				"Desarrollo de aplicación móvil",
+				"Diseño de interfaces", "UI/UX"
+			]
+		},
+		{
 			"name": "Fundación Ayudinga",
 			"position": "Desarrollador Frontend",
 			"url": "https://ayudinga.org",
