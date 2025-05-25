@@ -1,4 +1,4 @@
-import { SectionProps } from "@/lib/types";
+import type { SectionProps } from "@/lib/types";
 import TitlePrimary from "../typo/TitlePrimary";
 
 const Section = ({ title, children }: SectionProps) => {
