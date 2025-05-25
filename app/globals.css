@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Radley:ital@0;1&family=Righteous&display=swap');
+@plugin "daisyui" {
+  themes: caramellatte --default;
+}
