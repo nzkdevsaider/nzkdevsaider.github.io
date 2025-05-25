@@ -45,8 +45,6 @@ const Skills = () => {
         return <IconBrandCss3 size={20} />;
       case "mongodb":
         return <IconBrandMongodb size={20} />;
-      case "mysql":
-        return <IconBrandMysql size={20} />;
       case "python":
         return <IconBrandPython size={20} />;
       case "docker":

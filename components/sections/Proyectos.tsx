@@ -9,10 +9,10 @@ const Proyectos = () => {
     <Section title="Proyectos">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {projects.map((project, index) => (
-          <Link href={project.url}>
+          <Link key={project.name} href={project.url}>
             <div
               key={generateId(index)}
-              className="border border-slate-200 h-full shadow-sm rounded-md p-3 hover:shadow-md transition duration-300 ease-in-out cursor-pointer hover:border-slate-300"
+              className="border border-slate-200 h-full shadow-xs rounded-md p-3 hover:shadow-md transition duration-300 ease-in-out cursor-pointer hover:border-slate-300"
             >
               <div className="flex flex-col justify-between gap-4 h-full">
                 <div className="flex flex-col">
