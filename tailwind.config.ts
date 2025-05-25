@@ -15,31 +15,5 @@ const config: Config = {
 			},
 		},
 	},
-	daisyui: {
-		themes: [
-			{
-				morant: {
-					primary: "#0000ff",
-
-					secondary: "#006bdb",
-
-					accent: "#76b100",
-
-					neutral: "#1b1d00",
-
-					"base-100": "#fffef9",
-
-					info: "#007aca",
-
-					success: "#00faaf",
-
-					warning: "#9c5300",
-
-					error: "#ed3e4d",
-				},
-			},
-		],
-	},
-	plugins: [require("daisyui"), require("@midudev/tailwind-animations")],
 };
 export default config;
