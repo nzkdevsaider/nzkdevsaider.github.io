@@ -6,7 +6,7 @@
 		"email": "sebasmoraresu@gmail.com",
 		"phone": "(507) 62414201",
 		"url": "https://sebasmorant.saider.dev",
-		"summary": "Desarrollador full-stack con sólidos conocimientos en tecnologías web de vanguardia. Especializado en el desarrollo de aplicaciones serverless y una coombinación de habilidades técnicas excepcionales con una pasión por resolver desafíos.",
+		"summary": "Soy un desarrollador full-stack que le gusta manejar tecnologías web y fánatico del software de código libre. Me especializo en el desarrollo de aplicaciones web empresariales y combino habilidades técnicas sólidas con ganas reales de resolver cualquier problema.",
 		"location": {
 			"address": "Panamá",
 			"postalCode": "07101",
@@ -29,6 +29,10 @@
 				"network": "Instagram",
 				"username": "sebasmorant",
 				"url": "https://instagram.com/sebasmorant"
+			},
+			{
+				"network": "Contáctame",
+				"url": "mailto:sebasmoraresu@gmail.com"
 			}
 		]
 	},
@@ -42,7 +46,8 @@
 			"summary": "Implemento nuevas funcionalidades para facilitar la gestión financiera a personas, diseño interfaces con prácticas enfocadas en presentar un UI/UX amigable y contribuyo al desarollo de la aplicación móvil en React Native.",
 			"highlights": [
 				"Desarrollo de aplicación móvil",
-				"Diseño de interfaces", "UI/UX"
+				"Diseño de interfaces",
+				"UI/UX"
 			]
 		},
 		{
@@ -158,9 +163,9 @@
 			"keywords": ["MongoDB"]
 		},
 		{
-			"name": "MySQL",
+			"name": "PostgreSQL",
 			"level": "Intermediate",
-			"keywords": ["MySQL"]
+			"keywords": ["PostgreSQL"]
 		},
 		{
 			"name": "Python",
@@ -181,6 +186,11 @@
 			"name": "GitHub",
 			"level": "Advanced",
 			"keywords": ["GitHub"]
+		},
+		{
+			"name": "Figma",
+			"level": "Intermediate",
+			"keywords": ["Figma"]
 		},
 		{
 			"name": "NodeJS",
