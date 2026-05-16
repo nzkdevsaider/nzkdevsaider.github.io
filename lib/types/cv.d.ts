@@ -43,8 +43,8 @@ export interface Education {
 	url: string;
 	area: string;
 	studyType: string;
-	startDate: Date;
-	endDate: Date;
+	startDate: string;
+	endDate: string;
 	score: string;
 	courses: string[];
 }
@@ -61,8 +61,8 @@ export interface Language {
 
 export interface Project {
 	name: string;
-	startDate: Date;
-	endDate: Date;
+	startDate: string;
+	endDate: string;
 	description: string;
 	highlights: string[];
 	url: string;
@@ -89,11 +89,12 @@ export interface Skill {
 
 export interface Volunteer {
 	organization?: string;
+	name?: string;
 	position: string;
 	url: string;
-	startDate: Date;
-	endDate: Date;
+	startDate: string;
+	endDate: string;
 	summary: string;
 	highlights: string[];
-	name?: string;
+	location?: string;
 }

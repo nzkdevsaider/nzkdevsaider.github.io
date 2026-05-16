@@ -1,5 +1,47 @@
-@import 'tailwindcss';
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Radley:ital@0;1&family=Righteous&display=swap');
+@import "tailwindcss";
+
 @plugin "daisyui" {
-  themes: caramellatte --default;
+  themes: "ukiyo" --default;
+  logs: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "ukiyo";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(96.1% 0.0045 33.505);
+  --color-base-200: oklch(92.27% 0.0076 48.312);
+  --color-base-300: oklch(84.2% 0.0161 42.196);
+  --color-base-content: oklch(31.81% 0.021 42.049);
+
+  --color-primary: oklch(41.54% 0.0292 43.972);
+  --color-primary-content: oklch(96.1% 0.0045 33.505);
+
+  --color-secondary: oklch(76.16% 0.0248 44.182);
+  --color-secondary-content: oklch(31.81% 0.021 42.049);
+
+  --color-accent: oklch(59.32% 0.0448 43.167);
+  --color-accent-content: oklch(96.1% 0.0045 33.505);
+
+  --color-neutral: oklch(50.52% 0.0376 42.019);
+  --color-neutral-content: oklch(92.27% 0.0076 48.312);
+
+  --color-info: oklch(60% 0.12 231);
+  --color-info-content: oklch(97% 0.01 231);
+  --color-success: oklch(58% 0.13 158);
+  --color-success-content: oklch(97% 0.01 158);
+  --color-warning: oklch(72% 0.15 60);
+  --color-warning-content: oklch(30% 0.05 60);
+  --color-error: oklch(62% 0.18 22);
+  --color-error-content: oklch(97% 0.01 22);
+
+  --radius-selector: 0.6rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }

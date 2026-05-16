@@ -32,8 +32,3 @@ export interface SectionProps {
 	title: string;
 	children: React.ReactNode;
 }
-
-export interface ButtonProps {
-	network: string;
-	url: string;
-}
