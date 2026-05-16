@@ -1,19 +1,23 @@
-import AboutMe from "@/components/sections/AboutMe";
-import Educacion from "@/components/sections/Educacion";
-import Experiencia from "@/components/sections/Experiencia";
-import Proyectos from "@/components/sections/Proyectos";
-import Skills from "@/components/sections/Skills";
-import Voluntariado from "@/components/sections/Voluntariado";
+import Banner from "@/components/organisms/Banner";
+import Presentation from "@/components/organisms/Presentation";
+import AboutMe from "@/components/organisms/AboutMe";
+import Experiencia from "@/components/organisms/Experiencia";
+import Educacion from "@/components/organisms/Educacion";
+import Habilidades from "@/components/organisms/Habilidades";
 
 export default function Home() {
   return (
     <>
-    <AboutMe />
-    <Experiencia />
-    <Educacion />
-    <Voluntariado />
-    <Skills />
-    <Proyectos />
+      <Banner />
+      <div className="px-2 md:px-6 z-1">
+        <Presentation />
+        <div className="flex flex-col gap-8 mt-8 pb-12">
+          <AboutMe />
+          <Experiencia />
+          <Educacion />
+          <Habilidades />
+        </div>
+      </div>
     </>
   );
 }

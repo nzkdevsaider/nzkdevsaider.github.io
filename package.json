@@ -1,34 +1,31 @@
 {
-  "name": "sebasmorant",
-  "version": "0.1.0",
+  "name": "saider-portfolio",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tsc": "npx tsc --watch --noEmit"
   },
-  "packageManager": "pnpm@10.11.0",
   "dependencies": {
-    "@midudev/tailwind-animations": "^0.2.0",
-    "@radix-ui/react-dialog": "^1.0.5",
-    "@radix-ui/themes": "^3.2.1",
-    "@tabler/icons-react": "^3.33.0",
+    "@phosphor-icons/react": "^2.1.10",
     "clsx": "^2.1.0",
-    "cmdk": "^1.1.1",
-    "next": "15.3.2",
+    "framer-motion": "^12.38.0",
+    "next": "16.2.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.7",
-    "@types/node": "^22.15.21",
+    "@types/node": "^25.6.2",
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
     "daisyui": "^5.0.37",
-    "postcss": "^8",
+    "postcss": "^8.5.14",
     "tailwindcss": "^4.1.7",
-    "typescript": "^5"
+    "typescript": "^6.0.3"
   }
 }
